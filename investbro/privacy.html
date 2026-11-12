@@ -14,24 +14,34 @@
 
 <div class="card">
 <h2>Коротко</h2>
-<p>InvestBro не збирає ваших даних. У застосунку немає реєстрації, аналітики, реклами й стеження.</p>
+<p>InvestBro не збирає ваших даних. У застосунку немає реєстрації, аналітики, реклами й стеження. Розробник не отримує ваших даних і не має до них доступу.</p>
 <h2>Де зберігаються дані</h2>
-<p>Усе, що ви вносите або імпортуєте (рахунки, папери, угоди, суми, зарплата, цілі), зберігається лише на вашому пристрої та, якщо ви ввімкнете синхронізацію, у вашому особистому iCloud (Apple). Розробник не має доступу до цих даних.</p>
-<p>Резервні копії, які робить застосунок, зберігаються в його папці на пристрої («Файли» → На iPhone → InvestBro → Backups) або там, куди ви самі збережете файл.</p>
+<p>Усе, що ви вносите або імпортуєте (рахунки, папери, угоди, суми, зарплата, цілі), зберігається на вашому пристрої. Крім того:</p>
+<ul>
+<li><b>iPhone.</b> Якщо ви ввімкнете синхронізацію, дані зберігаються також у вашому особистому iCloud (Apple). Резервні копії застосунку - у його папці («Файли» → На iPhone → InvestBro → Backups) або там, куди ви самі збережете файл.</li>
+<li><b>Android.</b> Якщо ви ввімкнете хмарну копію (Налаштування → Резервна копія; за замовчуванням вимкнена), застосунок зберігає зашифровану копію в прихованій папці застосунку на вашому Google Drive. Цю папку бачить лише InvestBro. Копії старші за 30 днів застосунок видаляє. Системна резервна копія Android і перенесення на новий телефон містять базу даних і налаштування застосунку; Google шифрує системну копію блокуванням екрана вашого телефона.</li>
+</ul>
+<h2>Шифрування копії в Google Drive (Android)</h2>
+<p>Копія зашифрована вашим паролем (AES-256-GCM, ключ з пароля - PBKDF2-HMAC-SHA256). Пароль не залишає телефон: він зберігається запечатаним ключем Android Keystore. Google бачить лише зашифрований файл, його розмір і час, але не ваші суми.</p>
 <h2>Звернення до мережі</h2>
-<p>Застосунок звертається до трьох відкритих сервісів:</p>
+<p>Застосунок звертається до таких сервісів:</p>
 <ul>
 <li>Національний банк України (bank.gov.ua) - офіційні курси валют і довідник ОВДП. У запиті лише валюта й дата.</li>
 <li>Yahoo Finance (finance.yahoo.com) - ціни й графіки акцій, фондів і криптовалют. У запиті лише тікер (наприклад, «AAPL» або «BTC-USD») і період.</li>
 <li>CoinGecko (coingecko.com) - ціни й графіки криптовалют. У запиті лише назва монети (наприклад, «bitcoin») і період.</li>
+<li>Лише Android, лише з увімкненою хмарною копією: Google Drive (www.googleapis.com) - збереження, перелік, відновлення й видалення зашифрованих копій. Застосунок просить у Google один дозвіл - доступ до своєї прихованої папки (drive.appdata). Ваших імені, пошти чи інших даних облікового запису застосунок не отримує.</li>
 </ul>
 <p>Запити до Yahoo Finance і CoinGecko йдуть лише для тих паперів і монет, які ви додали або шукаєте. Кількість, суми, ціни купівлі та інші ваші дані не надсилаються. Як і під час будь-якого запиту в інтернеті, сервіс бачить IP-адресу пристрою. Ці сервіси мають власні політики приватності.</p>
 <h2>Файли</h2>
 <p>Звіти брокерів, які ви імпортуєте, застосунок читає на пристрої. Файли нікуди не надсилаються.</p>
 <h2>Треті сторони</h2>
-<p>Ми не передаємо й не продаємо дані третім сторонам, бо не отримуємо їх.</p>
+<p>Ми не передаємо й не продаємо дані третім сторонам, бо не отримуємо їх. Apple (iCloud) і Google (Google Drive, системна копія Android) зберігають ваші дані лише у вашому обліковому записі, якщо ви самі ввімкнете цю функцію.</p>
 <h2>Видалення даних</h2>
-<p>Видаліть застосунок - і дані на пристрої буде видалено. Дані в iCloud можна видалити в Параметрах iPhone: [ваше ім'я] → iCloud → Керування сховищем → InvestBro.</p>
+<p>Видаліть застосунок - і дані на пристрої буде видалено.</p>
+<ul>
+<li><b>iPhone.</b> Дані в iCloud: Параметри iPhone → [ваше ім'я] → iCloud → Керування сховищем → InvestBro.</li>
+<li><b>Android.</b> Копії в Google Drive після видалення застосунку лишаються. Щоб їх видалити: у застосунку Налаштування → Резервна копія → «Вимкнути і видалити копії»; або в Google Drive (веб) → Налаштування → Керування застосунками → InvestBro → Параметри → «Видалити приховані дані застосунку». Відкликати доступ: myaccount.google.com → Безпека → Сторонні застосунки й сервіси → InvestBro → Видалити доступ. Системна копія Android лишається у вашому обліковому записі Google, доки її не видалите ви (Google Drive → Резервні копії) або Google.</li>
+</ul>
 <h2>Діти</h2>
 <p>Застосунок не призначений для дітей і не збирає даних про них.</p>
 <h2>Зміни</h2>
@@ -42,18 +52,28 @@
 
 <div class="card" id="en">
 <h2>Privacy policy (effective 12.11.2026)</h2>
-<p><b>In short.</b> InvestBro does not collect your data. The app has no sign-up, no analytics, no ads and no tracking.</p>
-<p><b>Where your data is.</b> All that you enter or import (accounts, papers, trades, amounts, salary, goals) is kept only on your device and, if you turn on sync, in your personal iCloud (Apple). The developer has no access to this data. The backups that the app makes are kept in its folder on the device (Files → On My iPhone → InvestBro → Backups) or where you save the file.</p>
-<p><b>Network.</b> The app connects to three open services:</p>
+<p><b>In short.</b> InvestBro does not collect your data. The app has no sign-up, no analytics, no ads and no tracking. The developer does not receive your data and has no access to it.</p>
+<p><b>Where your data is.</b> All that you enter or import (accounts, papers, trades, amounts, salary, goals) is kept on your device. Also:</p>
+<ul>
+<li><b>iPhone.</b> If you turn on sync, the data is also kept in your personal iCloud (Apple). The backups that the app makes are kept in its folder (Files → On My iPhone → InvestBro → Backups) or where you save the file.</li>
+<li><b>Android.</b> If you turn on the cloud copy (Settings → Backup; it is off by default), the app keeps an encrypted copy in its hidden app folder on your Google Drive. Only InvestBro can see this folder. The app deletes copies that are older than 30 days. The Android system backup and the transfer to a new phone contain the database and the settings of the app; Google encrypts the system backup with the screen lock of your phone.</li>
+</ul>
+<p><b>Encryption of the Google Drive copy (Android).</b> The copy is encrypted with your password (AES-256-GCM, key from the password with PBKDF2-HMAC-SHA256). The password does not leave the phone: it is kept sealed with an Android Keystore key. Google sees only the encrypted file, its size and its time, not your amounts.</p>
+<p><b>Network.</b> The app connects to these services:</p>
 <ul>
 <li>National Bank of Ukraine (bank.gov.ua): the official exchange rates and the list of domestic government bonds (OVDP). The request has only the currency and the date.</li>
 <li>Yahoo Finance (finance.yahoo.com): the prices and charts of shares, funds and crypto. The request has only the ticker (for example, "AAPL" or "BTC-USD") and the period.</li>
 <li>CoinGecko (coingecko.com): the prices and charts of crypto. The request has only the coin name (for example, "bitcoin") and the period.</li>
+<li>Android only, only when the cloud copy is on: Google Drive (www.googleapis.com): save, list, restore and delete the encrypted copies. The app asks Google for one permission only: access to its hidden app folder (drive.appdata). The app does not get your name, email or other data of your account.</li>
 </ul>
 <p>The app sends requests to Yahoo Finance and CoinGecko only for the papers and coins that you added or search for. The quantities, amounts, purchase prices and your other data are not sent. As with each request on the internet, the service sees the IP address of the device. These services have their own privacy policies.</p>
 <p><b>Files.</b> The broker reports that you import are read on the device. They are not sent anywhere.</p>
-<p><b>Third parties.</b> We do not share or sell data, because we do not receive it.</p>
-<p><b>Deletion.</b> Delete the app to delete the data on the device. To delete the data in iCloud: iPhone Settings → [your name] → iCloud → Manage Storage → InvestBro.</p>
+<p><b>Third parties.</b> We do not share or sell data, because we do not receive it. Apple (iCloud) and Google (Google Drive, the Android system backup) keep your data only in your account, if you turn on that function.</p>
+<p><b>Deletion.</b> Delete the app to delete the data on the device.</p>
+<ul>
+<li><b>iPhone.</b> To delete the data in iCloud: iPhone Settings → [your name] → iCloud → Manage Storage → InvestBro.</li>
+<li><b>Android.</b> The copies in Google Drive stay after you delete the app. To delete them: in the app, Settings → Backup → "Turn off and delete copies"; or in Google Drive (web) → Settings → Manage apps → InvestBro → Options → "Delete hidden app data". To remove the access: myaccount.google.com → Security → Third-party apps and services → InvestBro → Delete all connections. The Android system backup stays in your Google account until you delete it (Google Drive → Backups) or Google deletes it.</li>
+</ul>
 <p><b>Children.</b> The app is not for children and collects no data about them.</p>
 <p><b>Changes.</b> A new version of this policy will be on this page with a new date.</p>
 <p><b>Contact.</b> <a href="mailto:wid3back@gmail.com">wid3back@gmail.com</a></p>
